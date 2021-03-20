@@ -1,6 +1,44 @@
-Reusable dockerfiles.
+Git container
 
-* Git container
+Setup
+
+    Copy public SSH key from ~/.ssh.
+    $ make setup
+
+Build
+
+    Build Docker image.
+    $ make build
+
+Run
+
+    Run the new container.
+    $ make run
+
+Check
+
+    Verify the new image and the new container.
+    $ make check
+
+SSH
+
+    SSH into the container.
+    $ make ssh
+
+Stop
+
+    Stop the container.
+    $ make stop
+
+Clean
+
+    Remove temporary build files.
+    $ make clean
+
+Uninstall
+
+    Delete the image.
+    $ make uninstall
 
 
 The GPLv3 License (GPL)

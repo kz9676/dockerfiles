@@ -1,6 +1,6 @@
+#
 # Makefile -- Python container build rules and helper utilities 
 #
-# The GPLv3 License (GPL)
 #
 # Copyright (C) 2021 Kostya Zolotarov
 #
@@ -16,6 +16,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
+#
 
 image_name = python
 container_name = python_app 
@@ -43,6 +44,7 @@ ip:
 	@echo $(container_ip)
 	
 ssh:
+	ssh-keyscan -t ecdsa $(container_ip) >> $(HOME)/.ssh/known_hosts
 	ssh root@$(container_ip)
 
 stop:

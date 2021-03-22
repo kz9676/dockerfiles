@@ -1,3 +1,4 @@
+#
 # Dockerfile -- Git container
 #
 # Usage:
@@ -8,7 +9,8 @@
 #    $ export git_ip=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' git)
 #    $ ssh root@$git_ip
 #
-# Copyright (C) 2021 Kostya Zolotarov, <kostya.zolotarov@gmail.com>
+#
+# Copyright (C) 2021 Kostya Zolotarov
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,6 +24,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
 
 FROM debian:buster-slim
 
